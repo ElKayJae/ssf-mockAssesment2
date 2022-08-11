@@ -148,9 +148,9 @@ public class OrderList {
                 String crpytoSymbol = crypto.getSymbol();
                 JsonObject cryptoObj =  o.getJsonObject(crpytoSymbol);
                 logger.info(cryptoObj.toString());
-                Set<String> cryptoSym = cryptoObj.keySet();
+                Set<String> currencySym = cryptoObj.keySet();
                 Map<String,Double> symbolPrice = new HashMap<>();
-                for (String sym: cryptoSym){
+                for (String sym: currencySym){
                     symbolPrice.put(sym, cryptoObj.getJsonNumber(sym).doubleValue());
                 }
                 crypto.setPrice(symbolPrice);
