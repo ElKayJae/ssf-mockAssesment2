@@ -9,8 +9,11 @@ Json body sent from postman:
 
 ...............
 
-please add your own apikey under main/resources/application.properties
+please add your own passwords under main/resources/application.properties
 
-crypto.compare.apikey=yourapikey
+crypto.compare.apikey=
+spring.redis.host=
+spring.redis.port=
+spring.redis.password=
 
 .............

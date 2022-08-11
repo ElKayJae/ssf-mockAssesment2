@@ -22,12 +22,12 @@ import jakarta.json.JsonValue;
 public class OrderList {
     private static final Logger logger = LoggerFactory.getLogger(OrderList.class);
 
-    private List<Crypto> cryptoList = new ArrayList<>();
-    private String name;
     private String id;
+    private String name;
     private String email;
     private String fsyms;
     private String tsyms;
+    private List<Crypto> cryptoList = new ArrayList<>();
     private Map<String,Double> totalPrice=new HashMap<>();
 
     public OrderList(){
@@ -174,17 +174,6 @@ public class OrderList {
     }
 
 
-
-                    // .stream()
-                    // .map(v -> (JsonObject) v)
-                    // .forEach((JsonObject v) -> {
-                    //     Item item = new Item();
-                    //     item.setItemName(v.getString("item"));
-                    //     item.setQuantity(v.getInt("quantity"));
-                    //     itemsQuote.add(v.getString("item"));
-                    //     itemsList.add(item);
-                    // }
-                    // )
 
 }
     
